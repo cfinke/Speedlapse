@@ -4,14 +4,14 @@ Speed up videos with ffmpeg according to a curve (or any function).
 
 Usage
 =====
-php speedlapse.php --input video.mp4 --output video-speedlapse.mp4
+`php speedlapse.php --input video.mp4 --output video-speedlapse.mp4`
 
 Defining the Speedup Function
 =============================
 See the example function in `speedup-functions.php` and write your own function
 that takes two arguments: the current frame and the total number of frames and
 returns the multiplier that should be applied to the maximum speed at this point
-in the video.
+in the video.  Generally, the return value is expected to be between zero and one.
 
 All Parameters
 ==============
