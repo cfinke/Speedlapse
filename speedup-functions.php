@@ -26,5 +26,6 @@ function speedup_default( $current_frame, $total_frames ) {
 	$x = $percentage * $period;
 
 	// A sine curve that is zero at zero
+	// https://www.wolframalpha.com/input?i=%28sin%28+x+%2B+%28+1.5+*+pi+%29+%29+%2B+1+%29+%2F+2
 	return ( sin( $x + ( 1.5 * pi() ) ) + 1 ) / 2;
 }
