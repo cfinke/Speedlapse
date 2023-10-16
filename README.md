@@ -2,6 +2,8 @@ Speedlapse
 ==========
 Speed up videos with ffmpeg according to a curve (or any function).
 
+You define a PHP function that specifies what the speed of the video should be at any given point, and the script will do the rest.
+
 Usage
 =====
 `php speedlapse.php --input video.mp4 --output video-speedlapse.mp4`
